@@ -1,0 +1,30 @@
+header {
+    Text-align: center;
+    font-family: monospace;
+}
+
+p {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.Game {
+    width: 70vw;
+    height: 70vw;
+    margin: auto;
+   display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.memory-card:hover {
+    transform: rotateY(180deg);
+}
